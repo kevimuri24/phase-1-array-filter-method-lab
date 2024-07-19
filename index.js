@@ -1,4 +1,4 @@
-findMatching = (drivers, string)=>{
+function findMatching (drivers, string){
     // Convert search string to lowercase
     const lowerString = string.toLowerCase();
 
@@ -9,7 +9,7 @@ findMatching = (drivers, string)=>{
      return matchNames
 }
 
-fuzzyMatch = (drivers, firsLetter)=>{
+function fuzzyMatch (drivers, firsLetter){
     // Convert firstLetter to lowercase
     const lowerLetter = firsLetter.toLowerCase();
 
@@ -20,7 +20,7 @@ fuzzyMatch = (drivers, firsLetter)=>{
     return findMatching
 }
 
-matchName = (drivers, name)=>{
+function matchName (drivers, name){
     // Convert name to lower case
     const lowerName = name.toLowerCase();
 
